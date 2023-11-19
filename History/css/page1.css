@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+  }
+body{
+    background-color: rgb(232, 232, 232);
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.leftmenu{
+    float: left;
+    background-color: rgb(5, 5, 5);
+    width: 20%;
+    height: 100vh;
+    transition: 0.3s;
+}
+.leftmenu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.leftmenu a:hover {
+    color: black;
+}
+.leftmenu hr{
+    width: 90%;
+    border: 1px solid rgb(86, 86, 86);
+}
+.buttons{
+    margin-left: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.selected{
+    display: flex;
+    align-items: center;
+    color: #EE6C4D;
+    transition: 0.3s;
+}
+.selected h3,span{
+    margin-left: 10px;
+}
+.selected:hover{
+    background-color: rgb(232, 232, 232);
+}
+.button{
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.button h3,span{
+    margin-left: 10px;
+}
+.button:hover{
+    background-color: rgb(232, 232, 232);
+}
+.parentallblogs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.allblogs{
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.allblogs a:hover{
+    color:white!important;
+}
+.topics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+}
+.main{
+    background-color: rgb(232, 232, 232);
+    float: left;
+    width: 60%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.main hr{
+    border: 1px solid rgb(163, 163, 163);
+    width: 90%;
+}
+.heading{
+    margin-left: 5%;
+    width: 80%;
+}
+.heading p{
+    color: rgb(131, 131, 131);
+}
+.content{
+    margin: auto;
+    text-align: justify;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.content img{
+    width: 80%;
+}
+.rightmenu{
+    color: white;
+    overflow-y: scroll;
+    float: left; 
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+}
+.rightmenu h2{
+    margin-left: 20px;
+}
+.rightmenu hr{
+    width: 90%;
+    border: 1px solid rgb(86, 86, 86);
+}
+.suggestionwrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.suggestion{
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 180px;
+}
+.suggestion a{
+    text-decoration: none;
+    color: white;
+}
+.suggestion img{
+    margin-bottom: -20px;
+    object-fit: cover;
+    height: 110px;
+    width: 90%;
+}
+@media only screen and (max-width: 950px){
+    .leftmenu{
+        float: left;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 80px;
+    }
+    .buttons{
+        margin-left: -40px;
+        font-size: 70%;
+        flex-direction: row;
+    }
+    .parentallblogs{
+        display:none;
+    }
+    .button,.selected{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .main{
+        width: 100%;
+    }
+    .content{
+        margin-bottom: 100px;
+    }
+    .rightmenu{
+        display:none;
+    }
+}
