@@ -152,7 +152,7 @@ body{
     transition: 0.3s;
 }
 .blog img:hover{
-    filter: opacity(0.6)
+    filter: opacity(0.6);
 }
 .content{
     color: rgb(0, 0, 0);
