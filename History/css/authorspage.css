@@ -126,7 +126,7 @@ body{
     width: 90%;
     border: 1px solid rgb(193, 193, 193);
 }
-.rsauthors{
+.authors{
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -177,7 +177,8 @@ body{
         height: 80px;
     }
     .buttons{
-        margin-left: -40px;
+        margin-left: 0px;
+        justify-content: space-evenly;
         font-size: 70%;
         flex-direction: row;
     }
