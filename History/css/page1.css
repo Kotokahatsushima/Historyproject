@@ -124,11 +124,14 @@ body{
     width: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
 }
 .content img{
     width: 100%;
+}
+.content h3{
+    margin-bottom: -3px;
+    margin-top: 40px;
 }
 .rightmenu{
     color: white;

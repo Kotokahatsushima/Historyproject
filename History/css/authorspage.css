@@ -145,6 +145,7 @@ body{
     font-weight: bold;
     flex: 1 1 33.33%;
     font-size: 20px;
+    margin-bottom: 30px;
 }
 .author p{
     line-height: 1px;

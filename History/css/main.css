@@ -190,6 +190,7 @@ body{
     }
     .blogs{
         margin-bottom: 100px;
+        justify-content: center;
     }
     .buttons{
         margin-left: 0px;
