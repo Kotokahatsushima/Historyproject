@@ -92,12 +92,13 @@ body{
     color:white!important;
 }
 .topics{
+    font-size: smaller;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 200px;
+    width: 80%;
+    height: 300px;
     overflow-y: scroll;
 }
 .main{
